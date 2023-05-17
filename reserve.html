@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="description" content="これはHTMLCSS の課題作品です。">
+	<title>SUSHIBAR | ご予約</title>
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットCSS -->
+	<link rel="icon" type="image/png" href="images/fav.png">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div id="reserve-header" class="big-bg">
+			<h2 class="page-title fontitalic">RESERVE</h2>
+			<p class="h2-sub fontitalic">ご予約</p>
+			</div>
+	</header>
+
+	<div id="reserve" class="wrapper">
+			<section>
+				<h3 class=" fontitalic">電話でのご予約はこちら</h3>
+				<div class="l-nav-cv-tel">
+					<p class="text-center">&#092; 3日以内の予約は電話でご予約ください &#047;</p>
+					<dl class="phonedl">
+					<dt class="tel-btn">06-0000-0000</dt>
+					<dd>営業時間18:00～23:00(水曜定休日)</dd>
+				</dl>
+			</div> <!-- /.l-nav-cv-tel -->
+</section>
+
+			<h3 class=" fontitalic">フォームでのご予約</h3>
+			<p class="kome">ご予約のお時間15分を過ぎてご連絡が取れない場合はやむを得ずキャンセル扱いとさせていただく場合がございますので遅れる場合は必ずご連絡下さい</p>
+			<p class="kome">ご連絡がなくご来店いただけなかったお客様は、以後のご予約を承ることができない場合がございますので、あらかじめご了承ください。</p>
+			<!-- フォームの始まり -->
+			<form method="post" action="#">
+				<!-- テーブルの始まり -->
+				<table id="signup">
+					<tr>
+						<th>ご予約日</th>
+						<td class="topspace">
+							<label for="user-date">
+								<input type="date" value="" id="user-date" required>
+							</label>
+						</td>
+					</tr>
+
+					<tr>
+						<th>予約時間</th>
+						<td class="yoyaku-radio">
+							<input type="radio" name="user-time" value="17:00" id="17">
+							<label for="17">17:00</label>
+							<input type="radio" name="user-time" value="17:30" id="17h">
+							<label for="17h">17:30</label>
+							<input type="radio" name="user-time" value="18:00" id="18">
+							<label for="18">18:00</label>
+							<input type="radio" name="user-time" value="18:30" id="18h">
+							<label for="18h">18:30</label>
+							<input type="radio" name="user-time" value="19:00" id="19">
+							<label for="19">19:00</label>
+							<input type="radio" name="user-time" value="19:30" id="19h">
+							<label for="19h">19:30</label><br>
+							<input type="radio" name="user-time" value="20:00" id="20">
+							<label for="20">20:00</label>
+							<input type="radio" name="user-time" value="20:30" id="20h">
+							<label for="20h">20:30</label>
+							<input type="radio" name="user-time" value="21:00" id="21">
+							<label for="21">21:00</label>
+							<input type="radio" name="user-time" value="21:30" id="21h">
+							<label for="21h">21:30</label>
+							<input type="radio" name="user-time" value="21:30" id="22">
+							<label for="22">22:00</label>
+						</td>
+					</tr>
+
+					<tr>
+						<th>ご利用人数</th>
+						<td>
+							<select name="user-number" class="selectpull" required>
+								<option hidden>---</option>
+								<option value="one">1人</option>
+								<option value="two">2人</option>
+								<option value="three">3人</option>
+								<option value="four">4人</option>
+								<option value="five">5人</option>
+								<option value="six">6人</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<th>
+							<label for="fullname">お名前</label>
+						</th>
+						<td>
+							<input type="text" name="user-name" id="fullname" placeholder="例) 寿 司" required>
+						</td>
+					</tr>
+
+					<tr>
+						<th>
+							<label for="kananame">ふりがな</label>
+						</th>
+						<td>
+							<input type="text" name="user-kananame" id="kananame" placeholder="例) ことぶき つかさ" required>
+						</td>
+					</tr>
+
+					<tr>
+						<th>
+							<label for="usertel">お電話番号</label>
+						</th>
+						<td>
+							<input type="tel" name="user-tel" id="usertel" placeholder="例) 06-0000-0000" required><br>
+						</td>
+					</tr>
+
+					<tr>
+						<th>
+							<label for="mail">メールアドレス</label>
+						</th>
+						<td>
+							<input type="email" name="user-mail" id="mail" placeholder="例) sample@info.co.jp" required><br>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="text-center" colspan="2">
+							<input type="checkbox" name="agree" value="agree" id="yes" required>
+							<label for="yes">「お店からのお知らせ」を読み、同意します</label>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="bottomspace text-center" colspan="2">
+							<input type="submit" class="hover fontitalic" value="内容を確認する">
+						</td>
+					</tr>
+				</table>
+				<!-- テーブルの終わり -->
+			</form>
+			<!-- フォームの終わり -->
+	</div><!-- /#container -->
+
+	<footer>
+		<div class="big-bg">
+			<img class="pc" src="images/footerimg.jpg" alt="SUSHIBAR SAKANAFISHは美味しいお寿司が自慢です">
+			<img class="sp" src="images/footerimg-sp.jpg" alt="SUSHIBAR SAKANAFISHは美味しいお寿司が自慢です">
+		</div>
+
+		<div class="location-map">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1066533760054!2d135.49376191467456!3d34.70248979063119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68d95e3a70b%3A0x1baec822e859c84a!2z5aSn6Ziq6aeF!5e0!3m2!1sja!2sjp!4v1676947312987!5m2!1sja!2sjp"
+				width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<p class="mapp">※このマップはダミーです。</p>
+		</div><!-- /.location-map -->
+
+    <div class="footer-con wrapper">
+      <div class="adress">
+        <p class="shop">SUSHIBAR SAKANAFISH</p>
+        <p>大阪府大阪市大阪町0-00-0<br>
+          18:00～23:00(LOは22:30) 毎週水曜定休日
+        </p>
+      </div><!-- /.adress -->
+      <div class="nav">
+        <nav>
+          <ul class="footer-nav fontitalic">
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="menu.html">お品書き</a></li>
+            <li><a href="reserve.html">ご予約</a></li>
+          </ul>
+        </nav>
+        <small>&copy;2023 SUSHIBAR SAKANA</small>
+      </div><!-- /.nav -->
+    </div><!-- /.footer-con -->
+  </footer>
+</body>
+
+
+</html>
